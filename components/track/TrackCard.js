@@ -103,8 +103,9 @@ export default function TrackCard({
         </span>
         <span className={styles.trackCardTitle}>{title}</span>
         <span className={styles.trackTags}>
-          {tags.split("\n").map((tag) => (
+          {tags.split("\n").map((tag, i) => (
             <span
+              key={i}
               className={styles.trackCardTags}
               style={{ backgroundColor: color }}
             >
