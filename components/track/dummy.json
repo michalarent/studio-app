@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Song 1",
+    "album": "Album 1",
+    "image": "/vercel.svg",
+    "duration": "4:20",
+    "priceNormal": 99,
+    "priceExclusive": 499,
+    "url": "/q.mp3"
+  }
+]

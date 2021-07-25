@@ -1,0 +1,91 @@
+.track {
+  border-left: 1px solid aliceblue;
+  border-right: 1px solid aliceblue;
+
+  width: 80vw;
+  min-height: 15vh;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.trackCard {
+  width: 80vw;
+  transform: scale(1);
+  transition: transform 0.2s;
+  display: table;
+  border-bottom: 1px solid black;
+}
+
+.trackCardContent {
+}
+
+.trackCard:hover {
+  transform: scale(1);
+}
+.trackCard > .trackCardTitle,
+.trackCardAlbum,
+.playButton,
+.Waveform {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  width: 20%;
+}
+
+.trackCardTitle {
+  color: black;
+  font-family: "Alegreya-Regular";
+  font-size: 3vh;
+  top: 50%;
+  margin-left: 2vw;
+}
+
+.trackCardAlbum {
+  color: black;
+  font-family: "Alegreya-Regular";
+  font-size: 3vh;
+}
+
+.playButton {
+  height: 100%;
+  cursor: pointer;
+}
+
+.Waveform {
+  overflow-x: hidden;
+  height: 15vh;
+  position: relative;
+  width: calc(80vw - 0px);
+  max-width: calc(80vw - 0px);
+}
+
+.Waveform > div > wave {
+  overflow-x: hidden !important;
+}
+
+.timeline > timeline > canvas {
+  overflow-x: hidden;
+  opacity: 0;
+}
+
+.timeline > timeline {
+  overflow-x: hidden;
+  height: 0 !important;
+}
+
+.trackTags {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.trackCardTags {
+  vertical-align: middle;
+  font-family: "Arial";
+  padding: 6px;
+  color: white;
+
+  border-radius: 20px;
+  margin: auto 3px;
+  height: 30px;
+  line-height: 30px;
+}

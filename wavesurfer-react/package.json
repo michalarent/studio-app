@@ -1,0 +1,51 @@
+{
+  "name": "wavesurfer-react",
+  "version": "2.0.8",
+  "description": "react wrapper for wavesurfer.js",
+  "keywords": [
+    "react",
+    "wavesurfer.js"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "author": "Denis Bogdanenko <shiirochi@yandex.ru>",
+  "peerDependencies": {
+    "react": "16.8.6",
+    "wavesurfer.js": "^3.2.0, ^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "prettier": "^1.19.1",
+    "prop-types": "^15.7.2",
+    "rimraf": "^2.6.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf dist/*",
+    "build": "babel src -d dist",
+    "prepublishOnly": "npm run build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShiiRochi/wavesurfer-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShiiRochi/wavesurfer-react/issues"
+  },
+  "homepage": "https://github.com/ShiiRochi/wavesurfer-react#readme"
+}
